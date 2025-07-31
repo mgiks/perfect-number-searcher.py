@@ -12,10 +12,7 @@ def is_perfect_number(num: int):
         if num % n == 0:
             sum_of_divisors += n
 
-    if sum_of_divisors == num:
-        return True
-
-    return False
+    return sum_of_divisors == num
 
 
 def get_perfect_numbers_from_and_up_to(start_from: int, to: int):
